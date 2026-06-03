@@ -271,8 +271,8 @@ a {
 }
 
 .hero {
-  min-height: calc(100vh - 78px);
-  padding: 72px 0 84px;
+  min-height: clamp(620px, calc(88vh - 78px), 860px);
+  padding: 64px 0 42px;
   display: grid;
   align-items: center;
   background: var(--bg);
@@ -333,7 +333,6 @@ h3 {
 .word {
   display: inline-block;
   opacity: 1;
-  filter: blur(0);
   transform: translateY(0);
 }
 
@@ -343,9 +342,8 @@ h3 {
 
 body.js-enabled .word {
   opacity: 0;
-  filter: blur(10px);
-  transform: translateY(26px);
-  animation: wordIn 760ms cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+  transform: translateY(18px);
+  animation: wordIn 680ms cubic-bezier(0.22, 0.8, 0.25, 1) forwards;
 }
 
 .word:nth-child(2) { animation-delay: 80ms; }
@@ -516,6 +514,10 @@ body.js-enabled .word {
 
 .services-section {
   background: var(--bg);
+}
+
+.services-section.section-pad {
+  padding-top: 56px;
 }
 
 .service-grid {
@@ -904,19 +906,17 @@ body.js-enabled .word {
 body.js-enabled .reveal,
 body.js-enabled .reveal-from-right {
   opacity: 0;
-  filter: blur(8px);
-  transform: translateY(26px);
-  transition: opacity 760ms ease, filter 760ms ease, transform 760ms cubic-bezier(0.2, 0.8, 0.2, 1);
+  transform: translateY(18px);
+  transition: opacity 620ms ease, transform 620ms cubic-bezier(0.22, 0.8, 0.25, 1);
 }
 
 body.js-enabled .reveal-from-right {
-  transform: translateX(34px);
+  transform: translateX(24px);
 }
 
 body.js-enabled .reveal.is-visible,
 body.js-enabled .reveal-from-right.is-visible {
   opacity: 1;
-  filter: blur(0);
   transform: translate(0, 0);
 }
 
@@ -926,7 +926,6 @@ body.js-enabled .reveal-from-right.is-visible {
 @keyframes wordIn {
   to {
     opacity: 1;
-    filter: blur(0);
     transform: translateY(0);
   }
 }
@@ -1006,7 +1005,12 @@ body.js-enabled .reveal-from-right.is-visible {
   }
 
   .hero {
-    padding-top: 56px;
+    min-height: auto;
+    padding: 48px 0 32px;
+  }
+
+  .services-section.section-pad {
+    padding-top: 48px;
   }
 
   .hero-lede {
@@ -1089,7 +1093,11 @@ body.js-enabled .reveal-from-right.is-visible {
 
   .hero {
     min-height: auto;
-    padding: 42px 0 56px;
+    padding: 38px 0 30px;
+  }
+
+  .services-section.section-pad {
+    padding-top: 40px;
   }
 
   .hero-grid {

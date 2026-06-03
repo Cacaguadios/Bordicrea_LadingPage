@@ -54,13 +54,12 @@ const initGsapRevealSystem = () => {
   window.gsap.utils.toArray(".reveal").forEach((element) => {
     window.gsap.fromTo(
       element,
-      { autoAlpha: 0, y: 26, filter: "blur(8px)" },
+      { autoAlpha: 0, y: 18 },
       {
         autoAlpha: 1,
         y: 0,
-        filter: "blur(0px)",
-        duration: 0.9,
-        ease: "power3.out",
+        duration: 0.72,
+        ease: "power2.out",
         scrollTrigger: {
           trigger: element,
           start: "top 86%",
@@ -73,13 +72,12 @@ const initGsapRevealSystem = () => {
   window.gsap.utils.toArray(".reveal-from-right").forEach((element) => {
     window.gsap.fromTo(
       element,
-      { autoAlpha: 0, x: 38, filter: "blur(8px)" },
+      { autoAlpha: 0, x: 24 },
       {
         autoAlpha: 1,
         x: 0,
-        filter: "blur(0px)",
-        duration: 0.9,
-        ease: "power3.out",
+        duration: 0.72,
+        ease: "power2.out",
         scrollTrigger: {
           trigger: element,
           start: "top 86%",
