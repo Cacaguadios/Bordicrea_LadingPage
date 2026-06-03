@@ -32,6 +32,56 @@ body {
   overflow-x: hidden;
 }
 
+body.intro-active {
+  overflow: hidden;
+}
+
+body.no-js .intro-loader {
+  display: none;
+}
+
+.intro-loader {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: #fff;
+}
+
+.intro-stage {
+  width: min(560px, 92vw);
+  display: grid;
+  justify-items: center;
+  gap: 18px;
+}
+
+.intro-logo {
+  width: clamp(190px, 28vw, 320px);
+  height: auto;
+  object-fit: contain;
+}
+
+.intro-thread {
+  width: min(420px, 76vw);
+  height: 2px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(59, 27, 122, 0.2), rgba(59, 27, 122, 0.95));
+  transform: scaleX(0);
+  transform-origin: left center;
+}
+
+.intro-tagline {
+  margin: 0;
+  color: var(--primary);
+  font-size: clamp(1rem, 2.4vw, 1.24rem);
+  font-weight: 780;
+  text-align: center;
+  letter-spacing: 0.01em;
+  opacity: 0;
+}
+
 body::before {
   content: none;
 }

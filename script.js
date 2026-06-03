@@ -3,9 +3,50 @@ const navPanel = document.querySelector("[data-nav-panel]");
 const header = document.querySelector("[data-header]");
 const parallaxItems = document.querySelectorAll("[data-parallax]");
 const nav = document.querySelector(".nav");
+const introLoader = document.querySelector("[data-intro-loader]");
+const introLogo = document.querySelector(".intro-logo");
+const introThread = document.querySelector("[data-intro-thread]");
+const introTagline = document.querySelector("[data-intro-tagline]");
+const heroGrid = document.querySelector(".hero-grid");
 
 document.body.classList.remove("no-js");
 document.body.classList.add("js-enabled");
+
+const finishIntro = () => {
+  introLoader?.remove();
+  document.body.classList.remove("intro-active");
+};
+
+if (introLoader) {
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const hasGsap = typeof window.gsap !== "undefined";
+
+  if (!hasGsap || reduceMotion) {
+    finishIntro();
+  } else {
+    document.body.classList.add("intro-active");
+
+    window.gsap.set(introLogo, { autoAlpha: 0, y: 16, scale: 0.985 });
+    window.gsap.set(introThread, { scaleX: 0, transformOrigin: "left center" });
+    window.gsap.set(introTagline, { autoAlpha: 0, y: 12 });
+    window.gsap.set(heroGrid, { autoAlpha: 0, y: 36 });
+
+    const introTl = window.gsap.timeline();
+
+    introTl
+      .to(introLogo, { autoAlpha: 1, y: 0, scale: 1, duration: 0.9, ease: "power3.out" })
+      .to(introThread, { scaleX: 1, duration: 1.2, ease: "power3.inOut" }, "-=0.08")
+      .to(introTagline, { autoAlpha: 1, y: 0, duration: 0.82, ease: "power2.out" }, "-=0.2")
+      .to(introLoader, {
+        autoAlpha: 0,
+        duration: 0.95,
+        delay: 0.7,
+        ease: "power3.inOut",
+        onComplete: finishIntro,
+      })
+      .to(heroGrid, { autoAlpha: 1, y: 0, duration: 1.15, ease: "power3.out" }, "-=0.28");
+  }
+}
 
 const setMenuA11yState = (isOpen) => {
   if (!menuToggle) {
