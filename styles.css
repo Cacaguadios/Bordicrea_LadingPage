@@ -23,6 +23,19 @@ html {
   scroll-behavior: smooth;
 }
 
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
 body {
   margin: 0;
   background: var(--bg);
@@ -488,36 +501,6 @@ body.js-enabled .word {
   font-weight: 700;
 }
 
-.trust-strip {
-  overflow: hidden;
-  border-block: 1px solid var(--soft-line);
-  background: var(--secondary-bg);
-}
-
-.trust-track {
-  display: flex;
-  width: max-content;
-  gap: 52px;
-  padding: 18px 0;
-  color: rgba(17, 17, 17, 0.72);
-  font-weight: 750;
-  animation: marquee 28s linear infinite;
-}
-
-.trust-track span {
-  position: relative;
-}
-
-.trust-track span::before {
-  content: "";
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  margin-right: 16px;
-  border-radius: 999px;
-  background: var(--accent);
-}
-
 .section-head {
   max-width: 800px;
   margin-bottom: 36px;
@@ -957,10 +940,6 @@ body.js-enabled .reveal-from-right.is-visible {
   to { transform: scaleX(1); }
 }
 
-@keyframes marquee {
-  to { transform: translateX(-50%); }
-}
-
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -1142,11 +1121,6 @@ body.js-enabled .reveal-from-right.is-visible {
     bottom: auto;
     max-width: none;
     margin: -18px 14px 0;
-  }
-
-  .trust-track {
-    gap: 34px;
-    font-size: 0.92rem;
   }
 
   .service-grid,
