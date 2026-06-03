@@ -7,28 +7,58 @@
       name="description"
       content="Bordicrea crea bordados con calidad y precisión en Puebla, México. Playeras, sudaderas, uniformes y personalización textil desde una sola pieza."
     />
-    <title>Bordicrea | Bordados con calidad y precisión - Azure</title>
+    <link rel="canonical" href="https://bordicrea.mx/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_MX" />
+    <meta property="og:title" content="Bordicrea | Bordados con calidad y precisión" />
+    <meta
+      property="og:description"
+      content="Bordicrea crea bordados con calidad y precisión en Puebla, México. Playeras, sudaderas, uniformes y personalización textil desde una sola pieza."
+    />
+    <meta property="og:url" content="https://bordicrea.mx/" />
+    <meta property="og:image" content="https://bordicrea.mx/assets/work-caps-group.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Bordicrea | Bordados con calidad y precisión" />
+    <meta
+      name="twitter:description"
+      content="Bordicrea crea bordados con calidad y precisión en Puebla, México. Playeras, sudaderas, uniformes y personalización textil desde una sola pieza."
+    />
+    <meta name="twitter:image" content="https://bordicrea.mx/assets/work-caps-group.png" />
+    <title>Bordicrea | Bordados con calidad y precisión</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="preload"
+      as="image"
+      href="assets/work-caps-group.avif"
+      type="image/avif"
+      imagesrcset="assets/work-caps-group-xs.avif 640w, assets/work-caps-group-sm.avif 900w, assets/work-caps-group.avif 960w"
+      imagesizes="(max-width: 1020px) 100vw, 56vw"
+      fetchpriority="high"
+    />
     <link rel="icon" type="image/png" href="assets/bordicrea-logo.png" />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body class="no-js">
     <header class="site-header" data-header>
       <nav class="nav wrap" aria-label="Navegación principal">
         <a class="brand" href="#inicio" aria-label="Bordicrea inicio">
-          <img class="brand-logo" src="assets/logo.png" alt="Bordicrea Creaciones y Bordados" />
+          <picture>
+            <source type="image/avif" srcset="assets/logo-sm.avif 900w, assets/logo.avif 1200w" sizes="(max-width: 680px) 146px, 214px" />
+            <source type="image/webp" srcset="assets/logo-sm.webp 900w, assets/logo.webp 1200w" sizes="(max-width: 680px) 146px, 214px" />
+            <img class="brand-logo" alt="Bordicrea Creaciones y Bordados" src="assets/logo.png" srcset="assets/logo-sm.png 900w, assets/logo.png 1200w" sizes="(max-width: 680px) 146px, 214px" width="1200" height="621" loading="eager" decoding="async" />
+          </picture>
         </a>
-        <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" data-menu-toggle>
+        <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-panel" aria-haspopup="true" data-menu-toggle>
           <span></span>
           <span></span>
           <span></span>
         </button>
-        <div class="nav-panel" data-nav-panel>
+        <div class="nav-panel" id="nav-panel" data-nav-panel>
           <a href="#inicio">Inicio</a>
           <a href="#servicios">Servicios</a>
           <a href="#trabajos">Trabajos</a>
@@ -92,7 +122,11 @@
           <div class="hero-visual reveal-from-right" data-parallax>
             <div class="stitch-orbit orbit-a"></div>
             <div class="stitch-orbit orbit-b"></div>
-            <img src="assets/work-caps-group.png" alt="Gorras bordadas personalizadas realizadas por Bordicrea" />
+            <picture>
+              <source type="image/avif" srcset="assets/work-caps-group-xs.avif 640w, assets/work-caps-group-sm.avif 900w, assets/work-caps-group.avif 960w" sizes="(max-width: 1020px) 100vw, 56vw" />
+              <source type="image/webp" srcset="assets/work-caps-group-xs.webp 640w, assets/work-caps-group-sm.webp 900w, assets/work-caps-group.webp 960w" sizes="(max-width: 1020px) 100vw, 56vw" />
+              <img alt="Gorras bordadas personalizadas realizadas por Bordicrea" src="assets/work-caps-group.png" srcset="assets/work-caps-group-xs.png 640w, assets/work-caps-group-sm.png 900w, assets/work-caps-group.png 960w" sizes="(max-width: 1020px) 100vw, 56vw" width="960" height="720" loading="eager" decoding="async" fetchpriority="high" />
+            </picture>
             <div class="hero-note glass-card">
               <span class="signal"></span>
               Bordados con calidad y precisión
@@ -127,7 +161,11 @@
           </div>
           <div class="service-grid">
             <article class="service-card reveal">
-              <img src="assets/work-shirts-set.png" alt="Playeras bordadas por Bordicrea" />
+              <picture>
+                <source type="image/avif" srcset="assets/work-shirts-set-sm.avif 900w, assets/work-shirts-set.avif 1536w" sizes="(max-width: 680px) 100vw, (max-width: 1020px) 50vw, 33vw" />
+                <source type="image/webp" srcset="assets/work-shirts-set-sm.webp 900w, assets/work-shirts-set.webp 1536w" sizes="(max-width: 680px) 100vw, (max-width: 1020px) 50vw, 33vw" />
+                <img alt="Playeras bordadas por Bordicrea" src="assets/work-shirts-set.png" srcset="assets/work-shirts-set-sm.png 900w, assets/work-shirts-set.png 1536w" sizes="(max-width: 680px) 100vw, (max-width: 1020px) 50vw, 33vw" width="1536" height="2048" loading="lazy" decoding="async" />
+              </picture>
               <div>
                 <span>Prendas</span>
                 <h3>Playeras y sudaderas</h3>
@@ -135,7 +173,11 @@
               </div>
             </article>
             <article class="service-card reveal">
-              <img src="assets/work-kids-blue-robe.png" alt="Bata infantil azul personalizada por Bordicrea" />
+              <picture>
+                <source type="image/avif" srcset="assets/work-kids-blue-robe.avif 874w" sizes="(max-width: 680px) 100vw, (max-width: 1020px) 50vw, 33vw" />
+                <source type="image/webp" srcset="assets/work-kids-blue-robe.webp 874w" sizes="(max-width: 680px) 100vw, (max-width: 1020px) 50vw, 33vw" />
+                <img alt="Bata infantil azul personalizada por Bordicrea" src="assets/work-kids-blue-robe.png" srcset="assets/work-kids-blue-robe.png 874w" sizes="(max-width: 680px) 100vw, (max-width: 1020px) 50vw, 33vw" width="874" height="681" loading="lazy" decoding="async" />
+              </picture>
               <div>
                 <span>Infantiles</span>
                 <h3>Batas y regalos</h3>
@@ -143,7 +185,11 @@
               </div>
             </article>
             <article class="service-card reveal">
-              <img src="assets/work-polleria-polo.png" alt="Uniforme tipo polo con bordado personalizado" />
+              <picture>
+                <source type="image/avif" srcset="assets/work-polleria-polo-sm.avif 900w, assets/work-polleria-polo.avif 1536w" sizes="(max-width: 680px) 100vw, (max-width: 1020px) 50vw, 33vw" />
+                <source type="image/webp" srcset="assets/work-polleria-polo-sm.webp 900w, assets/work-polleria-polo.webp 1536w" sizes="(max-width: 680px) 100vw, (max-width: 1020px) 50vw, 33vw" />
+                <img alt="Uniforme tipo polo con bordado personalizado" src="assets/work-polleria-polo.png" srcset="assets/work-polleria-polo-sm.png 900w, assets/work-polleria-polo.png 1536w" sizes="(max-width: 680px) 100vw, (max-width: 1020px) 50vw, 33vw" width="1536" height="2048" loading="lazy" decoding="async" />
+              </picture>
               <div>
                 <span>Empresas</span>
                 <h3>Uniformes</h3>
@@ -151,7 +197,11 @@
               </div>
             </article>
             <article class="service-card reveal">
-              <img src="assets/work-tecnilighting-jacket.png" alt="Chamarra acolchada con bordado empresarial Tecnilighting" />
+              <picture>
+                <source type="image/avif" srcset="assets/work-tecnilighting-jacket.avif 745w" sizes="(max-width: 680px) 100vw, (max-width: 1020px) 50vw, 33vw" />
+                <source type="image/webp" srcset="assets/work-tecnilighting-jacket.webp 745w" sizes="(max-width: 680px) 100vw, (max-width: 1020px) 50vw, 33vw" />
+                <img alt="Chamarra acolchada con bordado empresarial Tecnilighting" src="assets/work-tecnilighting-jacket.png" srcset="assets/work-tecnilighting-jacket.png 745w" sizes="(max-width: 680px) 100vw, (max-width: 1020px) 50vw, 33vw" width="745" height="939" loading="lazy" decoding="async" />
+              </picture>
               <div>
                 <span>Detalles</span>
                 <h3>Parches y especiales</h3>
@@ -171,75 +221,147 @@
           </div>
           <div class="gallery-grid">
             <a class="gallery-card wide reveal" href="#contacto" style="--pos: 50% 50%">
-              <img src="assets/work-production-machines.png" alt="Máquinas de Bordicrea realizando bordados en producción" />
+              <picture>
+                <source type="image/avif" srcset="assets/work-production-machines-sm.avif 900w, assets/work-production-machines.avif 960w" sizes="(max-width: 680px) 100vw, (max-width: 1020px) 50vw, 33vw" />
+                <source type="image/webp" srcset="assets/work-production-machines-sm.webp 900w, assets/work-production-machines.webp 960w" sizes="(max-width: 680px) 100vw, (max-width: 1020px) 50vw, 33vw" />
+                <img alt="Máquinas de Bordicrea realizando bordados en producción" src="assets/work-production-machines.png" srcset="assets/work-production-machines-sm.png 900w, assets/work-production-machines.png 960w" sizes="(max-width: 680px) 100vw, (max-width: 1020px) 50vw, 33vw" width="960" height="1280" loading="lazy" decoding="async" />
+              </picture>
               <span>Producción propia</span>
             </a>
             <a class="gallery-card tall reveal" href="#contacto" style="--pos: 50% 42%">
-              <img src="assets/work-production-closeup.png" alt="Acercamiento de máquina bordando una prenda blanca" />
+              <picture>
+                <source type="image/avif" srcset="assets/work-production-closeup-sm.avif 900w, assets/work-production-closeup.avif 960w" sizes="(max-width: 680px) 100vw, (max-width: 1020px) 50vw, 33vw" />
+                <source type="image/webp" srcset="assets/work-production-closeup-sm.webp 900w, assets/work-production-closeup.webp 960w" sizes="(max-width: 680px) 100vw, (max-width: 1020px) 50vw, 33vw" />
+                <img alt="Acercamiento de máquina bordando una prenda blanca" src="assets/work-production-closeup.png" srcset="assets/work-production-closeup-sm.png 900w, assets/work-production-closeup.png 960w" sizes="(max-width: 680px) 100vw, (max-width: 1020px) 50vw, 33vw" width="960" height="1280" loading="lazy" decoding="async" />
+              </picture>
               <span>Bordado en proceso</span>
             </a>
             <a class="gallery-card wide reveal" href="#contacto" style="--pos: 50% 50%">
-              <img src="assets/work-school-banner.png" alt="Estandarte escolar verde con texto bordado" />
+              <picture>
+                <source type="image/avif" srcset="assets/work-school-banner.avif 889w" sizes="(max-width: 680px) 100vw, (max-width: 1020px) 50vw, 33vw" />
+                <source type="image/webp" srcset="assets/work-school-banner.webp 889w" sizes="(max-width: 680px) 100vw, (max-width: 1020px) 50vw, 33vw" />
+                <img alt="Estandarte escolar verde con texto bordado" src="assets/work-school-banner.png" srcset="assets/work-school-banner.png 889w" sizes="(max-width: 680px) 100vw, (max-width: 1020px) 50vw, 33vw" width="889" height="681" loading="lazy" decoding="async" />
+              </picture>
               <span>Estandartes</span>
             </a>
             <a class="gallery-card tall reveal" href="#contacto" style="--pos: 50% 46%">
-              <img src="assets/work-cape-back.png" alt="Capa gris con bordado grande en espalda" />
+              <picture>
+                <source type="image/avif" srcset="assets/work-cape-back-sm.avif 900w, assets/work-cape-back.avif 1536w" sizes="(max-width: 680px) 100vw, (max-width: 1020px) 50vw, 33vw" />
+                <source type="image/webp" srcset="assets/work-cape-back-sm.webp 900w, assets/work-cape-back.webp 1536w" sizes="(max-width: 680px) 100vw, (max-width: 1020px) 50vw, 33vw" />
+                <img alt="Capa gris con bordado grande en espalda" src="assets/work-cape-back.png" srcset="assets/work-cape-back-sm.png 900w, assets/work-cape-back.png 1536w" sizes="(max-width: 680px) 100vw, (max-width: 1020px) 50vw, 33vw" width="1536" height="2048" loading="lazy" decoding="async" />
+              </picture>
               <span>Bordado grande</span>
             </a>
             <a class="gallery-card tall reveal" href="#contacto" style="--pos: 50% 48%">
-              <img src="assets/work-jacket-front.png" alt="Chamarra acolchada con parche bordado" />
+              <picture>
+                <source type="image/avif" srcset="assets/work-jacket-front-sm.avif 900w, assets/work-jacket-front.avif 1536w" sizes="(max-width: 680px) 100vw, (max-width: 1020px) 50vw, 33vw" />
+                <source type="image/webp" srcset="assets/work-jacket-front-sm.webp 900w, assets/work-jacket-front.webp 1536w" sizes="(max-width: 680px) 100vw, (max-width: 1020px) 50vw, 33vw" />
+                <img alt="Chamarra acolchada con parche bordado" src="assets/work-jacket-front.png" srcset="assets/work-jacket-front-sm.png 900w, assets/work-jacket-front.png 1536w" sizes="(max-width: 680px) 100vw, (max-width: 1020px) 50vw, 33vw" width="1536" height="2048" loading="lazy" decoding="async" />
+              </picture>
               <span>Chamarras</span>
             </a>
             <a class="gallery-card wide reveal" href="#contacto" style="--pos: 50% 50%">
-              <img src="assets/work-christmas-apron.png" alt="Mandil blanco con bordado navideño" />
+              <picture>
+                <source type="image/avif" srcset="assets/work-christmas-apron.avif 835w" sizes="(max-width: 680px) 100vw, (max-width: 1020px) 50vw, 33vw" />
+                <source type="image/webp" srcset="assets/work-christmas-apron.webp 835w" sizes="(max-width: 680px) 100vw, (max-width: 1020px) 50vw, 33vw" />
+                <img alt="Mandil blanco con bordado navideño" src="assets/work-christmas-apron.png" srcset="assets/work-christmas-apron.png 835w" sizes="(max-width: 680px) 100vw, (max-width: 1020px) 50vw, 33vw" width="835" height="913" loading="lazy" decoding="async" />
+              </picture>
               <span>Mandiles</span>
             </a>
             <a class="gallery-card reveal" href="#contacto" style="--pos: 50% 44%">
-              <img src="assets/work-papas-shirt.png" alt="Playera negra con bordado de productores de papas" />
+              <picture>
+                <source type="image/avif" srcset="assets/work-papas-shirt-sm.avif 900w, assets/work-papas-shirt.avif 1536w" sizes="(max-width: 680px) 100vw, (max-width: 1020px) 50vw, 33vw" />
+                <source type="image/webp" srcset="assets/work-papas-shirt-sm.webp 900w, assets/work-papas-shirt.webp 1536w" sizes="(max-width: 680px) 100vw, (max-width: 1020px) 50vw, 33vw" />
+                <img alt="Playera negra con bordado de productores de papas" src="assets/work-papas-shirt.png" srcset="assets/work-papas-shirt-sm.png 900w, assets/work-papas-shirt.png 1536w" sizes="(max-width: 680px) 100vw, (max-width: 1020px) 50vw, 33vw" width="1536" height="2048" loading="lazy" decoding="async" />
+              </picture>
               <span>Logotipos</span>
             </a>
             <a class="gallery-card tall reveal" href="#contacto" style="--pos: 50% 42%">
-              <img src="assets/work-stacked-hoodies.png" alt="Sudaderas apiladas con bordado blanco" />
+              <picture>
+                <source type="image/avif" srcset="assets/work-stacked-hoodies-sm.avif 900w, assets/work-stacked-hoodies.avif 1536w" sizes="(max-width: 680px) 100vw, (max-width: 1020px) 50vw, 33vw" />
+                <source type="image/webp" srcset="assets/work-stacked-hoodies-sm.webp 900w, assets/work-stacked-hoodies.webp 1536w" sizes="(max-width: 680px) 100vw, (max-width: 1020px) 50vw, 33vw" />
+                <img alt="Sudaderas apiladas con bordado blanco" src="assets/work-stacked-hoodies.png" srcset="assets/work-stacked-hoodies-sm.png 900w, assets/work-stacked-hoodies.png 1536w" sizes="(max-width: 680px) 100vw, (max-width: 1020px) 50vw, 33vw" width="1536" height="2048" loading="lazy" decoding="async" />
+              </picture>
               <span>Producción</span>
             </a>
             <a class="gallery-card reveal" href="#contacto" style="--pos: 50% 48%">
-              <img src="assets/work-hoodie-white-symbol.png" alt="Sudadera azul con bordado blanco" />
+              <picture>
+                <source type="image/avif" srcset="assets/work-hoodie-white-symbol.avif 720w" sizes="(max-width: 680px) 100vw, (max-width: 1020px) 50vw, 33vw" />
+                <source type="image/webp" srcset="assets/work-hoodie-white-symbol.webp 720w" sizes="(max-width: 680px) 100vw, (max-width: 1020px) 50vw, 33vw" />
+                <img alt="Sudadera azul con bordado blanco" src="assets/work-hoodie-white-symbol.png" srcset="assets/work-hoodie-white-symbol.png 720w" sizes="(max-width: 680px) 100vw, (max-width: 1020px) 50vw, 33vw" width="720" height="960" loading="lazy" decoding="async" />
+              </picture>
               <span>Sudaderas</span>
             </a>
             <a class="gallery-card reveal" href="#contacto" style="--pos: 50% 46%">
-              <img src="assets/work-pink-polo-logo.png" alt="Polo rosa con logotipo bordado" />
+              <picture>
+                <source type="image/avif" srcset="assets/work-pink-polo-logo.avif 720w" sizes="(max-width: 680px) 100vw, (max-width: 1020px) 50vw, 33vw" />
+                <source type="image/webp" srcset="assets/work-pink-polo-logo.webp 720w" sizes="(max-width: 680px) 100vw, (max-width: 1020px) 50vw, 33vw" />
+                <img alt="Polo rosa con logotipo bordado" src="assets/work-pink-polo-logo.png" srcset="assets/work-pink-polo-logo.png 720w" sizes="(max-width: 680px) 100vw, (max-width: 1020px) 50vw, 33vw" width="720" height="960" loading="lazy" decoding="async" />
+              </picture>
               <span>Negocios</span>
             </a>
             <a class="gallery-card reveal" href="#contacto" style="--pos: 50% 42%">
-              <img src="assets/work-cap-green-patch.png" alt="Gorra negra con parche verde bordado" />
+              <picture>
+                <source type="image/avif" srcset="assets/work-cap-green-patch-sm.avif 900w, assets/work-cap-green-patch.avif 960w" sizes="(max-width: 680px) 100vw, (max-width: 1020px) 50vw, 33vw" />
+                <source type="image/webp" srcset="assets/work-cap-green-patch-sm.webp 900w, assets/work-cap-green-patch.webp 960w" sizes="(max-width: 680px) 100vw, (max-width: 1020px) 50vw, 33vw" />
+                <img alt="Gorra negra con parche verde bordado" src="assets/work-cap-green-patch.png" srcset="assets/work-cap-green-patch-sm.png 900w, assets/work-cap-green-patch.png 960w" sizes="(max-width: 680px) 100vw, (max-width: 1020px) 50vw, 33vw" width="960" height="960" loading="lazy" decoding="async" />
+              </picture>
               <span>Parches</span>
             </a>
             <a class="gallery-card reveal" href="#contacto" style="--pos: 50% 45%">
-              <img src="assets/work-hoodie-flat.png" alt="Sudadera negra con bordado blanco" />
+              <picture>
+                <source type="image/avif" srcset="assets/work-hoodie-flat.avif 720w" sizes="(max-width: 680px) 100vw, (max-width: 1020px) 50vw, 33vw" />
+                <source type="image/webp" srcset="assets/work-hoodie-flat.webp 720w" sizes="(max-width: 680px) 100vw, (max-width: 1020px) 50vw, 33vw" />
+                <img alt="Sudadera negra con bordado blanco" src="assets/work-hoodie-flat.png" srcset="assets/work-hoodie-flat.png 720w" sizes="(max-width: 680px) 100vw, (max-width: 1020px) 50vw, 33vw" width="720" height="960" loading="lazy" decoding="async" />
+              </picture>
               <span>Prendas</span>
             </a>
             <a class="gallery-card reveal" href="#contacto" style="--pos: 50% 50%">
-              <img src="assets/work-champion-cap.png" alt="Gorra azul con bordado estilo marca" />
+              <picture>
+                <source type="image/avif" srcset="assets/work-champion-cap.avif 720w" sizes="(max-width: 680px) 100vw, (max-width: 1020px) 50vw, 33vw" />
+                <source type="image/webp" srcset="assets/work-champion-cap.webp 720w" sizes="(max-width: 680px) 100vw, (max-width: 1020px) 50vw, 33vw" />
+                <img alt="Gorra azul con bordado estilo marca" src="assets/work-champion-cap.png" srcset="assets/work-champion-cap.png 720w" sizes="(max-width: 680px) 100vw, (max-width: 1020px) 50vw, 33vw" width="720" height="960" loading="lazy" decoding="async" />
+              </picture>
               <span>Gorra personalizada</span>
             </a>
             <a class="gallery-card reveal" href="#contacto" style="--pos: 50% 50%">
-              <img src="assets/work-blue-hoodie-character.png" alt="Sudadera azul con bordado de personaje" />
+              <picture>
+                <source type="image/avif" srcset="assets/work-blue-hoodie-character.avif 720w" sizes="(max-width: 680px) 100vw, (max-width: 1020px) 50vw, 33vw" />
+                <source type="image/webp" srcset="assets/work-blue-hoodie-character.webp 720w" sizes="(max-width: 680px) 100vw, (max-width: 1020px) 50vw, 33vw" />
+                <img alt="Sudadera azul con bordado de personaje" src="assets/work-blue-hoodie-character.png" srcset="assets/work-blue-hoodie-character.png 720w" sizes="(max-width: 680px) 100vw, (max-width: 1020px) 50vw, 33vw" width="720" height="960" loading="lazy" decoding="async" />
+              </picture>
               <span>Diseños especiales</span>
             </a>
             <a class="gallery-card tall reveal" href="#contacto" style="--pos: 50% 42%">
-              <img src="assets/work-chiles-cap.png" alt="Gorra azul con bordado de chiles" />
+              <picture>
+                <source type="image/avif" srcset="assets/work-chiles-cap-sm.avif 900w, assets/work-chiles-cap.avif 1152w" sizes="(max-width: 680px) 100vw, (max-width: 1020px) 50vw, 33vw" />
+                <source type="image/webp" srcset="assets/work-chiles-cap-sm.webp 900w, assets/work-chiles-cap.webp 1152w" sizes="(max-width: 680px) 100vw, (max-width: 1020px) 50vw, 33vw" />
+                <img alt="Gorra azul con bordado de chiles" src="assets/work-chiles-cap.png" srcset="assets/work-chiles-cap-sm.png 900w, assets/work-chiles-cap.png 1152w" sizes="(max-width: 680px) 100vw, (max-width: 1020px) 50vw, 33vw" width="1152" height="1795" loading="lazy" decoding="async" />
+              </picture>
               <span>Marcas locales</span>
             </a>
             <a class="gallery-card reveal" href="#contacto" style="--pos: 50% 48%">
-              <img src="assets/work-slippers-event.png" alt="Pantuflas blancas con bordado de evento" />
+              <picture>
+                <source type="image/avif" srcset="assets/work-slippers-event-sm.avif 900w, assets/work-slippers-event.avif 1152w" sizes="(max-width: 680px) 100vw, (max-width: 1020px) 50vw, 33vw" />
+                <source type="image/webp" srcset="assets/work-slippers-event-sm.webp 900w, assets/work-slippers-event.webp 1152w" sizes="(max-width: 680px) 100vw, (max-width: 1020px) 50vw, 33vw" />
+                <img alt="Pantuflas blancas con bordado de evento" src="assets/work-slippers-event.png" srcset="assets/work-slippers-event-sm.png 900w, assets/work-slippers-event.png 1152w" sizes="(max-width: 680px) 100vw, (max-width: 1020px) 50vw, 33vw" width="1152" height="2048" loading="lazy" decoding="async" />
+              </picture>
               <span>Eventos</span>
             </a>
             <a class="gallery-card reveal" href="#contacto" style="--pos: 50% 50%">
-              <img src="assets/work-papas-cap.png" alt="Gorra azul con bordado de productores de papas" />
+              <picture>
+                <source type="image/avif" srcset="assets/work-papas-cap-sm.avif 900w, assets/work-papas-cap.avif 1200w" sizes="(max-width: 680px) 100vw, (max-width: 1020px) 50vw, 33vw" />
+                <source type="image/webp" srcset="assets/work-papas-cap-sm.webp 900w, assets/work-papas-cap.webp 1200w" sizes="(max-width: 680px) 100vw, (max-width: 1020px) 50vw, 33vw" />
+                <img alt="Gorra azul con bordado de productores de papas" src="assets/work-papas-cap.png" srcset="assets/work-papas-cap-sm.png 900w, assets/work-papas-cap.png 1200w" sizes="(max-width: 680px) 100vw, (max-width: 1020px) 50vw, 33vw" width="1200" height="1599" loading="lazy" decoding="async" />
+              </picture>
               <span>Empresarial</span>
             </a>
             <a class="gallery-card tall reveal" href="#contacto" style="--pos: 50% 48%">
-              <img src="assets/work-baby-feet-blanket.png" alt="Cobija blanca con huellitas bordadas" />
+              <picture>
+                <source type="image/avif" srcset="assets/work-baby-feet-blanket.avif 726w" sizes="(max-width: 680px) 100vw, (max-width: 1020px) 50vw, 33vw" />
+                <source type="image/webp" srcset="assets/work-baby-feet-blanket.webp 726w" sizes="(max-width: 680px) 100vw, (max-width: 1020px) 50vw, 33vw" />
+                <img alt="Cobija blanca con huellitas bordadas" src="assets/work-baby-feet-blanket.png" srcset="assets/work-baby-feet-blanket.png 726w" sizes="(max-width: 680px) 100vw, (max-width: 1020px) 50vw, 33vw" width="726" height="906" loading="lazy" decoding="async" />
+              </picture>
               <span>Bebé</span>
             </a>
           </div>
@@ -249,7 +371,11 @@
       <section class="brand-story section-pad" id="bordicrea">
         <div class="wrap brand-story-grid">
           <div class="brand-story-media reveal">
-            <img src="assets/bordicrea-hero.png" alt="Trabajo de bordado personalizado realizado por Bordicrea" />
+            <picture>
+              <source type="image/avif" srcset="assets/bordicrea-hero-sm.avif 900w, assets/bordicrea-hero.avif 1717w" sizes="(max-width: 680px) 100vw, (max-width: 1020px) 50vw, 33vw" />
+              <source type="image/webp" srcset="assets/bordicrea-hero-sm.webp 900w, assets/bordicrea-hero.webp 1717w" sizes="(max-width: 680px) 100vw, (max-width: 1020px) 50vw, 33vw" />
+              <img alt="Trabajo de bordado personalizado realizado por Bordicrea" src="assets/bordicrea-hero.png" srcset="assets/bordicrea-hero-sm.png 900w, assets/bordicrea-hero.png 1717w" sizes="(max-width: 680px) 100vw, (max-width: 1020px) 50vw, 33vw" width="1717" height="916" loading="lazy" decoding="async" />
+            </picture>
           </div>
           <div class="brand-story-copy reveal">
             <p class="eyebrow">Conoce Bordicrea</p>
@@ -353,5 +479,27 @@
     </footer>
 
     <script src="script.js"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Bordicrea",
+        "description": "Taller de bordado y personalización textil en Puebla.",
+        "url": "https://bordicrea.mx/",
+        "image": "https://bordicrea.mx/assets/work-caps-group.png",
+        "telephone": "+52-222-325-4426",
+        "email": "bordicrea@hotmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Puebla",
+          "addressCountry": "MX"
+        },
+        "sameAs": [
+          "https://www.facebook.com/Bordicrea/",
+          "https://www.instagram.com/bordicrea/"
+        ],
+        "areaServed": "Puebla, México"
+      }
+    </script>
   </body>
 </html>

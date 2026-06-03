@@ -269,14 +269,20 @@ h3 {
 
 .word {
   display: inline-block;
-  opacity: 0;
-  filter: blur(10px);
-  transform: translateY(26px);
-  animation: wordIn 760ms cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
 }
 
 .word.line {
   display: block;
+}
+
+body.js-enabled .word {
+  opacity: 0;
+  filter: blur(10px);
+  transform: translateY(26px);
+  animation: wordIn 760ms cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
 }
 
 .word:nth-child(2) { animation-delay: 80ms; }
@@ -862,20 +868,20 @@ h3 {
   font-size: 0.9rem;
 }
 
-.reveal,
-.reveal-from-right {
+body.js-enabled .reveal,
+body.js-enabled .reveal-from-right {
   opacity: 0;
   filter: blur(8px);
   transform: translateY(26px);
   transition: opacity 760ms ease, filter 760ms ease, transform 760ms cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
-.reveal-from-right {
+body.js-enabled .reveal-from-right {
   transform: translateX(34px);
 }
 
-.reveal.is-visible,
-.reveal-from-right.is-visible {
+body.js-enabled .reveal.is-visible,
+body.js-enabled .reveal-from-right.is-visible {
   opacity: 1;
   filter: blur(0);
   transform: translate(0, 0);
