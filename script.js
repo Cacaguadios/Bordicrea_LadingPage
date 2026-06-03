@@ -20,13 +20,21 @@ const finishIntro = () => {
 if (introLoader) {
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const hasGsap = typeof window.gsap !== "undefined";
+  const waitForSiteAssets = () =>
+    new Promise((resolve) => {
+      if (document.readyState === "complete") {
+        resolve();
+        return;
+      }
+      window.addEventListener("load", resolve, { once: true });
+    });
 
   if (!hasGsap || reduceMotion) {
-    finishIntro();
+    waitForSiteAssets().then(finishIntro);
   } else {
     document.body.classList.add("intro-active");
 
-    window.gsap.set(introLogo, { autoAlpha: 0, y: 16, scale: 0.985 });
+    window.gsap.set(introLogo, { autoAlpha: 1, y: 0, scale: 1 });
     window.gsap.set(introThread, { scaleX: 0, transformOrigin: "left center" });
     window.gsap.set(introTagline, { autoAlpha: 0, y: 12 });
     window.gsap.set(heroGrid, { autoAlpha: 0, y: 36 });
@@ -34,17 +42,21 @@ if (introLoader) {
     const introTl = window.gsap.timeline();
 
     introTl
-      .to(introLogo, { autoAlpha: 1, y: 0, scale: 1, duration: 0.9, ease: "power3.out" })
-      .to(introThread, { scaleX: 1, duration: 1.2, ease: "power3.inOut" }, "-=0.08")
-      .to(introTagline, { autoAlpha: 1, y: 0, duration: 0.82, ease: "power2.out" }, "-=0.2")
-      .to(introLoader, {
-        autoAlpha: 0,
-        duration: 0.95,
-        delay: 0.7,
-        ease: "power3.inOut",
-        onComplete: finishIntro,
-      })
-      .to(heroGrid, { autoAlpha: 1, y: 0, duration: 1.15, ease: "power3.out" }, "-=0.28");
+      .to(introThread, { scaleX: 1, duration: 1.2, ease: "power3.inOut" })
+      .to(introTagline, { autoAlpha: 1, y: 0, duration: 0.82, ease: "power2.out" }, "-=0.2");
+
+    waitForSiteAssets().then(() => {
+      window.gsap
+        .timeline()
+        .to(introLoader, {
+          autoAlpha: 0,
+          duration: 0.95,
+          delay: 0.25,
+          ease: "power3.inOut",
+          onComplete: finishIntro,
+        })
+        .to(heroGrid, { autoAlpha: 1, y: 0, duration: 1.15, ease: "power3.out" }, "-=0.28");
+    });
   }
 }
 
