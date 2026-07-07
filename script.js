@@ -126,7 +126,7 @@ if (introLoader) {
     });
   const waitForLoaderShowcase = () =>
     new Promise((resolve) => {
-      window.setTimeout(resolve, 3200);
+      window.setTimeout(resolve, 1100);
     });
   const waitForIntroReady = () => Promise.all([waitForSiteAssets(), waitForLoaderShowcase()]);
 
