@@ -1097,19 +1097,7 @@ body.js-enabled .reveal-from-right.is-visible {
   }
 
   .floating-socials {
-    top: 76px;
-    right: 12px;
-    gap: 8px;
-  }
-
-  .floating-social {
-    width: 38px;
-    height: 38px;
-  }
-
-  .floating-social svg {
-    width: 19px;
-    height: 19px;
+    display: none;
   }
 
   .floating-whatsapp {
