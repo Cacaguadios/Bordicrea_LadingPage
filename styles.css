@@ -604,7 +604,20 @@ body.js-enabled .word {
 }
 
 .gallery-card::after {
-  content: none;
+  content: "Cotizar similar";
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  z-index: 1;
+  padding: 7px 10px;
+  border-radius: 999px;
+  background: rgba(59, 27, 122, 0.9);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 850;
+  opacity: 0;
+  transform: translateY(-6px);
+  transition: opacity 260ms ease, transform 260ms ease;
 }
 
 .gallery-card span {
@@ -632,6 +645,11 @@ body.js-enabled .word {
 .gallery-card:hover span {
   background: #fff;
   transform: translateY(-3px);
+}
+
+.gallery-card:hover::after {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .gallery-card.tall {
