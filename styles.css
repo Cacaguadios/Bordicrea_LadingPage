@@ -590,6 +590,32 @@ body.js-enabled .word {
   color: var(--muted);
 }
 
+.service-card ul {
+  display: grid;
+  gap: 6px;
+  margin: 16px 0 0;
+  padding: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  list-style: none;
+}
+
+.service-card li {
+  position: relative;
+  padding-left: 16px;
+}
+
+.service-card li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.66em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
 .gallery-section {
   background: var(--bg);
 }
