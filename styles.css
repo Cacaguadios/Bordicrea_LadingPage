@@ -109,6 +109,21 @@ a {
   text-decoration: none;
 }
 
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid rgba(216, 27, 125, 0.78);
+  outline-offset: 4px;
+}
+
+.btn:focus-visible,
+.nav-cta:focus-visible,
+.floating-social:focus-visible,
+.floating-whatsapp:focus-visible,
+.gallery-card:focus-visible,
+.text-link:focus-visible {
+  box-shadow: 0 0 0 5px rgba(216, 27, 125, 0.14), var(--soft-shadow);
+}
+
 .wrap {
   width: min(1180px, calc(100% - 44px));
   margin-inline: auto;
@@ -648,6 +663,11 @@ body.js-enabled .word {
 }
 
 .gallery-card:hover::after {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.gallery-card:focus-visible::after {
   opacity: 1;
   transform: translateY(0);
 }
