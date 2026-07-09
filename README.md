@@ -1,60 +1,88 @@
 # Bordicrea Landing Page
 
-Landing page oficial de Bordicrea, enfocada en mostrar servicios de bordado personalizado y convertir visitas en cotizaciones por WhatsApp.
+Landing page profesional para Bordicrea, una microempresa de bordados personalizados en Puebla. El sitio presenta servicios, productos destacados, catálogo filtrable, proceso de trabajo, testimonios, ubicación y llamadas a la acción por WhatsApp.
 
-## Demo
-
-Repositorio: https://github.com/Cacaguadios/Bordicrea_LadingPage.git
-
-## Tecnologias
+## Stack usado
 
 - HTML5
 - CSS3
-- JavaScript (vanilla)
-- Assets optimizados con formatos AVIF, WebP y PNG fallback
+- JavaScript puro
+- CSS Grid
+- Flexbox
+- Media queries
+- Animaciones CSS
+- IntersectionObserver para animaciones al hacer scroll
 
-## Caracteristicas
+No usa React, Vue, Angular, Vite, Bootstrap, Tailwind ni dependencias externas.
 
-- Diseno responsive para desktop y mobile.
-- Menu movil accesible (ARIA, cierre con `Escape`, cierre por clic externo, control de foco).
-- SEO tecnico: `canonical`, Open Graph, Twitter Cards y JSON-LD (`LocalBusiness`).
-- Rendimiento mejorado con `picture`, `srcset`, `sizes`, `loading`, `decoding` y `fetchpriority` en la imagen principal.
-- Fallback sin JavaScript para evitar contenido oculto.
+## Cómo abrir el proyecto
 
-## Estructura del proyecto
+Abre el archivo `index.html` directamente en tu navegador.
 
-```text
-.
-├── assets/
-├── index.html
-├── styles.css
-├── script.js
-└── README.md
+También puedes usar una extensión como Live Server si quieres recarga automática durante edición, pero no es obligatorio.
+
+## Estructura de carpetas
+
+```txt
+bordicrea-landing/
+  index.html
+  README.md
+  assets/
+    images/
+      logo-bordicrea.svg
+      work-shirts-set.webp
+      work-pink-polo-logo.webp
+      work-papas-cap.webp
+      work-hoodie-white-symbol.webp
+      work-blue-hoodie-character.webp
+      work-polleria-polo.webp
+      work-papas-shirt.webp
+      work-baby-feet-blanket.webp
+      work-christmas-apron.webp
+      work-school-banner.webp
+    icons/
+  css/
+    styles.css
+  js/
+    main.js
 ```
 
-## Desarrollo local
+## Cómo desplegar
 
-Puedes abrir `index.html` directamente o usar un servidor estatico:
+### Vercel
 
-```bash
-npx http-server . -p 4173
-```
+1. Sube el proyecto a un repositorio de GitHub.
+2. En Vercel, selecciona `New Project`.
+3. Importa el repositorio.
+4. Usa `bordicrea-landing` como carpeta raíz si el repositorio contiene más carpetas.
+5. No configures build command.
+6. Publica el proyecto.
 
-Luego visita:
+### Netlify
 
-- http://127.0.0.1:4173
+1. Sube el proyecto a GitHub.
+2. En Netlify, selecciona `Add new site`.
+3. Importa el repositorio.
+4. Configura `bordicrea-landing` como base directory si es necesario.
+5. Deja vacío el build command.
+6. Usa `.` como publish directory si estás dentro de la carpeta del proyecto.
 
-## Despliegue en Azure Static Web Apps
+### GitHub Pages
 
-1. Sube este repositorio a GitHub.
-2. En Azure, crea un recurso **Static Web App**.
-3. Conecta el repositorio `Cacaguadios/Bordicrea_LadingPage`.
-4. Configura:
-   - App location: `/`
-   - API location: *(vacío)*
-   - Output location: `/`
-5. Guarda y deja que GitHub Actions haga el deploy automatico.
+1. Sube la carpeta `bordicrea-landing` al repositorio.
+2. En GitHub, entra a `Settings > Pages`.
+3. Selecciona la rama principal.
+4. Si el sitio está en raíz, selecciona `/root`.
+5. Si está dentro de una carpeta, mueve el contenido de `bordicrea-landing` a la raíz o configura el flujo de publicación correspondiente.
 
-## Licencia
+## Mantenimiento
 
-Uso interno/comercial de Bordicrea.
+- Los estilos principales están en `css/styles.css`.
+- Las interacciones están en `js/main.js`.
+- Las secciones del sitio están en `index.html`.
+- Para agregar productos al catálogo, duplica una tarjeta `.catalog-card` y ajusta `data-category`, imagen, nombre, descripción y `data-product`.
+- Para modificar colores, edita las variables dentro de `:root` en `css/styles.css`.
+
+## Estado
+
+Proyecto estático listo para abrir en navegador y desplegar en hosting estático.
